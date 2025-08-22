@@ -8,7 +8,8 @@ O desafio consiste em desenvolver uma cópia da página do Discord utilizando os
 
 ## 💻Projeto
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/5d3b247f-974b-4723-b481-5c8b66319953" />
+<img width="1346" height="610" alt="pagina" src="https://github.com/user-attachments/assets/98938023-2121-4188-b911-12e49aeabb5c" />
+
 
 - Confira o projeto finalizado [neste link](https://mariaeduarda907.github.io/Clone-youtube-dio/).
 
