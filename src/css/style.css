@@ -77,6 +77,11 @@ h1 {
     color: var(--bg-font-color);
 }
 
+#button-one a{
+    color: var(--bg-font-color);
+    text-decoration: none;
+}
+
 #button-one:hover {
     cursor: pointer;
     background-color: #f1f1f1;
@@ -86,6 +91,11 @@ h1 {
 #button-two {
     background-color: var(--bg-font-color);
     color: var(--main-color);
+}
+
+#button-two a{
+    color: var(--main-color);
+    text-decoration: none;
 }
 
 #button-two:hover {
