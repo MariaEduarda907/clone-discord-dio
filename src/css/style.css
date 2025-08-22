@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --bg-font-color: #23272a;
+    --main-color: #ffffff;
+    --grey-bg: #f6f6f6;
+}
+
+body {
+    background-color: var(--main-color);
+    width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    align-self: baseline;
+}
+
+header {
+    background: url(../assets/image-header.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+}
+
+.container {
+    padding: 0 20px;
+    text-align: center;
+    max-width: 760px;
+    color: var(--main-color);
+    gap: 1.5rem;
+}
+
+h1 {
+    font-family: 'Luckiest Guy';
+    font-weight: 400;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container p {
+    margin-bottom: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.container button {
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+#button-one {
+    background-color: var(--main-color);
+    color: var(--bg-font-color);
+}
+
+#button-one:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#button-two {
+    background-color: var(--bg-font-color);
+    color: var(--main-color);
+}
+
+#button-two:hover {
+    cursor: pointer;
+    background-color: #181a1d;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+    color: var(--bg-font-color);
+
+}
+
+.content {
+    gap: 0.5rem 1rem;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 0.5rem 1rem;
+    max-width: 970px;
+    margin: 40px auto;
+}
+
+.content-box img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 600px;
+}
+
+.content-box h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+    align-self: flex-end;
+}
+
+.content-reverse {
+    gap: 0.5rem 1rem;
+    background-color: var(--grey-bg);
+}
+
+.content-reverse img {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    width: 600px;
+}
+
+
+.tech-content {
+    background-color: var(--grey-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 200px;
+    gap: 1rem;
+}
+
+.tech-content h2 {
+    font-family: 'Luckiest Guy';
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.tech-content p {
+    text-align: center;
+}
+
+.tech-content img {
+    width: 780px;
+}
+
+footer {
+    background-color: var(--bg-font-color);
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+footer img {
+    max-width: 230px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .content-box {
+        text-align: center;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 40px 20px;
+    }
+
+    .content-box img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-items: center;
+    }
+
+    .content-box h2 {
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .content-box {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 40px 30px;
+        text-align: center;
+    }
+
+    .content-box img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .content-box h2{
+        font-size: 2rem;
+    }
+
+    .content-reverse img {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .content-box h2,
+    .content-box p,
+    .tech-content p {
+        align-self: center;
+        text-align: start;
+    }
+
+    .tech-content {
+        padding: 40px 30px;
+    }
+
+    .tech-content h2 {
+        font-size: 2rem;
+        align-self: flex-start;
+    }
+
+    .tech-content img {
+        width: 100%;
+    }
+}
